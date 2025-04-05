@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중앙 박스</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* 가로 가운데 */
+        align-items: center; /* 세로 가운데 */
+      }
+      .out-box {
+        height: 500px;
+        width: 500px;
+        background: #4c4c4c;
+        display: flex; /* Flexbox 사용 */
+        justify-content: center; /* 가로 정렬 */
+        align-items: center; /* 세로 정렬 */
+      }
+      .in-box {
+        height: 300px;
+        width: 300px;
+        background: #bdbdbd;
+        text-align: center;
+        line-height: 300px; /* 수직 중앙 정렬용 (단순 텍스트에 한해) */
+        color: rgb(243, 9, 9);
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 7%; /* 최대 50% 적용 가능*/
+        box-shadow: 0 4px 10px rgba(3, 0, 0, 0.2); /* ✨ 살짝 그림자 효과도 추가 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="out-box">
+      <div class="in-box">hello HTML!</div>
+    </div>
+  </body>
+</html>
